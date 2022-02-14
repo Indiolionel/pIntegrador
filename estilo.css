@@ -1,4 +1,6 @@
-
+html {
+    scroll-behavior: smooth;
+}
 
 ul li {
     list-style:none;
@@ -6,6 +8,12 @@ ul li {
     /* width: 50vw; */
     align-items: center;
     justify-content: center;
+
+
+}
+li:hover {
+    background: rgb(166, 206, 166);
+
 }
 ul {
     /* margin-left: -40%; */
@@ -16,17 +24,55 @@ ul {
     width: 100vw;
     height: 90vh;
     background-color: rgba(104, 156, 127, 0.8);
+    animation: aparecer 1s;
 }
 
-/* .top {
+nav {
     background-color: green;
     width: 100%;
-    height: 10%;
-} */
+}
 
+img {
+    position: relative;
+}
+
+.jardin-p {
+    z-index: 10;
+    margin-top: 5%;
+    margin-left: 2%;
+    width: 40%;
+    height: 60%;
+    background-color: rgb(113, 184, 140,0.9);
+    border: 2px solid green;
+    position: absolute;
+    
+}
 
 .lista {
     display: none;
+}
+
+@keyframes aparecer {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.ci {
+    animation: desliz 5s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes desliz {
+    from {
+        margin-left: -50%;
+    }
+    to {
+        margin-left: 50%;
+    }
 }
 .menu {
     width: 96%;
@@ -34,7 +80,6 @@ ul {
     display: flex;
     justify-content: end;
     align-items: center;
-    
 }
 
 input {
@@ -44,6 +89,7 @@ input {
 
 .change:checked + .lista {
     display: block;
+    
 }
 
 
@@ -54,13 +100,22 @@ input {
 
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(29, 34, 28);
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.cuadro-1 {
+    font-size: 25px;
+    color: rgba(43, 40, 40, 0.932);
 }
 
 h3 {
-    background-color: red;
-    width: 50%;
+    background-color: rgb(34, 104, 44);
+    width: 100%;
     text-align: center;
+    color: aliceblue;
 }
 img {
     height: 80vh;
@@ -69,8 +124,8 @@ img {
 
 
 .seccion {
-    height: 110vh;
-    margin-top: 20%;
+    height: 100vh;
+
 }
 
 
@@ -78,9 +133,7 @@ img {
 header {
     width: 100%;
     position: fixed;
-    z-index: 1;
-    margin-top: 30vh;
+    z-index: 11;
+    margin-top: 40vh;
 }
-
-
 
