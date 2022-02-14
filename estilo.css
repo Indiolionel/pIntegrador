@@ -68,10 +68,10 @@ img {
 
 @keyframes desliz {
     from {
-        margin-left: -40%;
+        margin-left: -30%;
     }
     to {
-        margin-left: 40%;
+        margin-left: 35%;
     }
 }
 .menu {
