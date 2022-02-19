@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,7 @@
     <script src="/fontawesome-free-6.0.0-web/js/all.js"></script>
 </head>
 <body>
-    
+
     <header>
     <div class="menu">
         <input type="checkbox" class="change" id="icon">
@@ -20,11 +21,11 @@
         <li><a href="#plantas">Plantas</a></li>
         <li><a href="#sanidad">Sanidad</a></li>
         <li><a href="#contacto">Contactenos</a></li>
-        <li><a href="">Ayuda</a></li>
+        <li><a href="">Servicios</a></li>
     </ul>
 </div>
 <label for="icon">
-    <i  style="cursor:pointer" class=" fa-solid fa-circle-chevron-left"></i>
+    <i  style="cursor:pointer" class=" fa-solid fa-circle-chevron-left color"></i>
     <!-- <i  style="cursor:pointer" class=" fa-solid fa-circle-chevron-right"></i> -->
 </label>
 </div>
@@ -34,33 +35,72 @@
     <h3><p class="ci">Conciencia Inmaculata</p> </h3>
     <div class="jardin">
         <div class="jardin-p">
-        <p class="cuadro-1"><b>Conciencia Inmaculata</b> <br><br>Poyecto destinado al diseño y cuidado de jardines</p>
+            <div class="cuadro">
+        <p class="cuadro-1"><b>Diseñamos tu jardin a Conciencia</b></p>
+            <button class="diseño"><a href="">Si, Quiero!</a> </button> 
+    </div>  
+        <div class="foto-planta">
     </div>
-        <img src="jardin-1.jpg" alt="">
 </div>
+</div>
+
 </section>
-<div class="contenedor-1">
 <section id="plantas" class="seccion">
-    <h3>Mis Plantas</h3>
-    <img src="/Planta-1.jpg" alt="">
-</section>
+    <h3><p class="ci">Mis Plantas</p></h3>
+    <div class="contenedor">
+        <img src="img-1.jpg" alt="" id="imagen">
+        <div class="contenedor-bottom">
+        <div class="bottom atras">
+            &#60
+        </div>
+        
+        <div class="bottom adelante">
+            &#62
+        </div>
+    </div> 
+
+<form action="" class="caracteristicas-plantas">
+    <label class="caracteristicas-plantas-2" for=""><b>Nombre: </b><span id="nombre">A1</span></label>
+    <label class="caracteristicas-plantas-2" for=""><b>Genero: </b><span id="genero">B1</span></label>
+    <label class="caracteristicas-plantas-2" for=""><b>Precio: </b><span id="precio">500</span>$</label>
+    <hr color="green" size=1 width="200">
+</form>
 </div>
-<section id="sanidad" class="seccion">
-    <h3>Sanidad</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatem dolorum tenetur adipisci sed mollitia magnam ratione voluptatibus at ducimus! Mollitia, reiciendis! Quibusdam, culpa nobis? Rerum doloremque perspiciatis recusandae natus.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium facere, corporis vero reprehenderit quibusdam minima odit sit doloribus, earum rem asperiores? Non eaque consequuntur consequatur doloremque minima fugiat neque laudantium!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, asperiores omnis. Maxime quibusdam recusandae eveniet quod aliquid amet saepe tenetur voluptatem aperiam deleniti et esse natus, dolore totam, nisi est!
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem laudantium dolorum nesciunt amet alias quam veritatis molestiae ab architecto consequatur, deleniti sapiente necessitatibus esse, ipsa sunt quia? Explicabo, aut nobis.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, iure repellendus assumenda voluptate earum commodi recusandae quibusdam minima aut eligendi reprehenderit, numquam, quam maiores qui esse? Iusto sint incidunt reiciendis!
+</section>
+<section id="sanidad" cspanass="seccion">
+    <h3><p class="ci">Sanidad</p></h3>
+    <p class="info-sanidad">El 80% de los alimentos que consumimos y el 98% del oxigeno que respiramos se lo debemos a las plantas, por eso hacemos una sanidad orgánica o agroecologica, segun requerimiento o necesidad a tratar
+        Amigable con el medio ambiente y asi asegurarnos que las plantas esten protegidas frente a enfermedades y plagas. 
+        <br> Sanas, nuestras plantas, logran prosperar de forma sostenible en su habitat..
     </p>
 </section>
 
 <section id="contacto" class="seccion">
-    <h3>Quieres Contactacnos?</h3>
-    <form action=""
-    
-    ></form>
+    <h3><p class="ci">Quieres Contactacnos?</p></h3>
+    <form action="">
+        
+        <div class="nombre form">
+            <label for="username">Nombre:</label>
+            <br>
+            <input id="username" type="text" name="username">
+          </div>
+          <div class="email form">
+            <label for="userEmail">Email:</label>
+            <br>
+            <input id="userEmail" type="email" name="userEmail">
+          </div>
+          <div class="consulta form">
+            <label for="userConsulta">Consulta:</label>
+            <br>
+            <textarea name="user_message" id="userConsulta" cols="40" rows="15"></textarea>
+          </div>
+          <div class="enviar form">
+            <input id="envio" type="submit" name="envio">
+          </div>
+        
+        </form>
 </section>
 
+<script src="codigo.js"></script>
 </body>
 </html>
