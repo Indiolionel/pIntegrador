@@ -140,6 +140,7 @@ ul {
     animation: desliz 5s;
     animation-iteration-count:infinite;
     animation-direction: alternate;
+    overflow: hidden;
 }
 
 @keyframes desliz {
@@ -147,7 +148,7 @@ ul {
         margin-left: -30%;
     }
     to {
-        margin-left: 35%;
+        margin-left: 30%;
     }
 }
 .menu {
@@ -234,7 +235,7 @@ header {
 }
 
 #imagen {  
-    width: 70%;
+    width: 78%;
     height: 70%;
     overflow: hidden;
     margin-top: 12%;
@@ -253,7 +254,9 @@ header {
     height: 16%;
     margin-top: 1%;
     background-color: rgba(77, 100, 72, 0.959);
-    box-shadow: 20px 20px 50px rgba(78, 97, 73, 0.959);
+    box-shadow: 2px 2px 15px rgba(78, 97, 73, 0.959);
+    /* box-shadow: 2px 2px 15px rgb(42, 78, 48); */
+    border-radius: 10px;
     z-index: 8;
 }
 
@@ -297,21 +300,60 @@ header {
 
 
 input {
-    width: 20%;
-    height: 20%;
+    width: 80%;
+    height: 70%;
+    margin-left: 4%;
+    border: 1px solid rgb(154, 163, 22); 
+    box-shadow: 2px 2px rgb(164, 173, 32);
+}
+
+
+input:focus {
+    border: 1px solid rgb(154, 163, 22); 
+    box-shadow: 2px 2px rgb(88, 94, 15);
+    outline: none;
+}
+
+textarea {
+    border: 1px solid rgb(154, 163, 22); 
+    box-shadow: 2px 2px rgb(164, 173, 32);
+    margin-left: 4%;
+}
+
+textarea:focus {
+    border: 1px solid rgb(154, 163, 22); 
+    box-shadow: 2px 2px rgb(88, 94, 15);
+    outline: none;
+}
+
+#envio {
+    margin-top: 4%;
+    width: 40%;
 }
 
 form {
     display: flex;
     flex-direction: column;
     align-items: space-around;
+    background-color: rgb(188, 194, 189);
+    width: 90%;
+    height: 60%;
+    background-color: rgb(144, 216, 148,0.3);
+    margin-left: 0%;
 }
 
+#contactanos {
+margin-top: 8%;
+width: 90%;
+box-shadow: 2px 2px 15px rgb(42, 78, 48);
+border-radius: 10px;
+}
 .caracteristicas-plantas {
     width: 100%;
     height: 70%;
     align-items: center;
     background-color: rgb(144, 216, 148,0.3);
+    
     
 }
 
@@ -321,5 +363,33 @@ form {
 
 .info-sanidad {
     font-size: 16px;
+    background-color: rgb(144, 216, 148,0.3);
+    width: 90%;
+    box-shadow: 2px 2px 15px rgb(42, 78, 48);
+    border-radius: 10px;
+    text-align: inherit;
 }
 
+.sanidad-foto {
+    height: 60%;
+}
+
+
+
+.contenedor-contacto {
+    width:100%;
+    height: 94%;
+    background-color: rgba(190, 181, 151, 0.959);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-sanidad {
+    width: 100%;
+    height: 94%;
+    background-color: rgba(190, 181, 151, 0.959);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

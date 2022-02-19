@@ -67,38 +67,42 @@
 </form>
 </div>
 </section>
-<section id="sanidad" cspanass="seccion">
+<section id="sanidad" class="seccion">
     <h3><p class="ci">Sanidad</p></h3>
+    <div class="contenedor-sanidad">
     <p class="info-sanidad">El 80% de los alimentos que consumimos y el 98% del oxigeno que respiramos se lo debemos a las plantas, por eso hacemos una sanidad orgánica o agroecologica, segun requerimiento o necesidad a tratar
         Amigable con el medio ambiente y asi asegurarnos que las plantas esten protegidas frente a enfermedades y plagas. 
         <br> Sanas, nuestras plantas, logran prosperar de forma sostenible en su habitat..
     </p>
+    <img class="sanidad-foto" src="fondo-2.jpg" alt="">
+</div>
 </section>
 
 <section id="contacto" class="seccion">
     <h3><p class="ci">Quieres Contactacnos?</p></h3>
-    <form action="">
+    <div class="contenedor-contacto">
+    <form id="contactanos" action="">
         
         <div class="nombre form">
-            <label for="username">Nombre:</label>
+            <!-- <label for="username">Nombre:</label> -->
             <br>
-            <input id="username" type="text" name="username">
+            <input id="username" type="text" name="username"  placeholder="Nombre">
           </div>
           <div class="email form">
-            <label for="userEmail">Email:</label>
+            <!-- <label for="userEmail">Email:</label> -->
             <br>
-            <input id="userEmail" type="email" name="userEmail">
+            <input id="userEmail" type="email" name="userEmail"  placeholder="Email">
           </div>
           <div class="consulta form">
-            <label for="userConsulta">Consulta:</label>
             <br>
-            <textarea name="user_message" id="userConsulta" cols="40" rows="15"></textarea>
+            <textarea placeholder="Consulta" name="user_message" id="userConsulta" cols="33" rows="15"></textarea>
           </div>
           <div class="enviar form">
             <input id="envio" type="submit" name="envio">
           </div>
         
         </form>
+    </div>
 </section>
 
 <script src="codigo.js"></script>
