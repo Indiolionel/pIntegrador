@@ -7,137 +7,102 @@ html {
     src: url(plantillas/Amaline\ Trial.otf);
 }
 
-ul li {
-    list-style:none;
-    /* background-color: rgb(82, 150, 82); */
-    /* width: 50vw; */
-    /* align-items: flex-start; */
-    /* justify-content: center; */
-    margin-left: -10%;
-    font-family:"letraNueva";
-    font-weight: 900;
-}
-
-ul li:hover {
-    background: rgb(15, 32, 10);
-
-}
-ul {
-    margin-top: 28%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 80vw;
-    height: 94vh;
-    background-color: rgba(105, 28, 121, 0.9);
-    animation: aparecer 1s;
+img {
+    height: 85vh;
+    width: 100vw;
 }
 
 
-.img-1 {
+
+/* header */
+
+header {
     width: 100%;
-    height: 100%;
-    
-}
-.color {
-    color:rgb(63, 6, 75);
+    position: fixed;
+    z-index: 11;
+    margin-top: 40vh;
 }
 
-
-.jardin {
-    background-color: rgba(190, 181, 151, 0.959);
-    width: 100%;
-    height: 94%;  
-    display: flex; 
-    flex-direction: column; 
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.jardin-p {
-    
-    z-index: 10;
-    margin-left: 1%;
+.menu {
+    width: 96%;
+    height: 6rem;
     display: flex;
-    flex-direction: column;
+    justify-content: end;
     align-items: center;
-    justify-content: space-between;
-    width: 95%;
-    height: 95%;
-    opacity: 0.8;
-    /* background-color: rgba(248, 214, 122, 0.8); */
+}
+
+.change {
+    position: absolute;
+    display: none;
+}
+
+.change:checked + .lista {
+    display: block;
     
-}
-
-.cuadro {
-    width: 100%;
-    height: 50%;
-    margin-left: -10%;
-    font-size: 30px;
-    font-family:"letraNueva";
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    animation: aparecer 3s;
-}
-.cuadro-1 {
-    color: rgba(39, 122, 31, 0.979);
-    width: 70%;
-    height: 60%;
-    display: flex;
-    align-items: end;
-}
-
-.diseño {
-    margin-right: 8%;
-    border: 2px solid rgb(154, 163, 22);
-    border-radius: 10%;
-    background-color: rgba(55, 194, 42, 0.6);
-    font-family:"letraNueva";
-    animation: temblor 1s 2;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    width: 50%;
-    height: 14%;
-}
-
-.foto-planta {
-    background-image: url(plantasTransparente.png);
-    width: 70%;
-    height: 70%;
-    position: relative;
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-size: 70% 70%;
-    margin-left: 70%;
-    margin-top: 1%;
-    
-    
-}
-
-@keyframes temblor {
-    from {
-        
-    }
-    to {
-        transform: scale(1.05)
-        
-    }
 }
 
 .lista {
     display: none;
 }
 
-@keyframes aparecer {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+ul {
+    margin-left: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(78, 76, 78, 0.9);
+    animation: aparecer 1s;
+}
+
+ul li {
+    list-style:none;
+    /* background-color: rgb(82, 150, 82);
+    /* width: 50vw; */
+    align-items: flex-start;
+    justify-content: center;
+    font-family:"letraNueva";
+    font-weight: 900;
+}
+
+ul li:hover {
+    background: rgb(199, 211, 195);
+    box-shadow: 2px 2px 15px black;
+    border-radius: 20%;
+
+}
+
+.color {
+    color:rgb(63, 6, 75);
+}
+
+a {
+    text-decoration: none;
+    color: rgba(48, 16, 53, 0.931);
+    font-size: 20px;
+}
+
+.icon {
+    margin-top: 2%;
+}
+
+
+
+/* Section  */
+
+.seccion {
+    height: 100vh;
+    width: 100vw;
+}
+
+h3 {
+    background-color: rgba(190, 181, 151, 0.959);
+    width: 100%;
+    text-align: center;
+    font-family:"letraNueva";
+    color: rgba(39, 122, 31, 0.979);
 }
 
 .ci {
@@ -147,74 +112,155 @@ ul {
     overflow: hidden;
 }
 
-@keyframes desliz {
-    from {
-        margin-left: -30%;
-    }
-    to {
-        margin-left: 30%;
-    }
-}
-.menu {
-    width: 96%;
-    height: 0px;
-    display: flex;
-    justify-content: end;
+/* Section-Presentacion  */
+
+
+.jardin {
+    background-color: rgba(190, 181, 151, 0.959);
+    width: 100%;
+    height: 94%;  
+    display: flex; 
+    flex-direction: column; 
     align-items: center;
-    background-color: green;
+    justify-content: space-around;
 }
 
-.change {
-    position: absolute;
-    display: none;
+.jardin-p {
+    
+    z-index: 10;
+    margin-left: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    width: 95%;
+    height: 95%;
+    opacity: 0.8;
 }
+
+.cuadro {
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    animation: aparecer 3s;
+
+}
+.cuadro-1 {
+    color: rgba(39, 122, 31, 0.979);
+    width: 12rem;
+    height: 60%;
+    font-size: 30px;
+    font-family:"letraNueva";
+}
+
+.contenedor-diseño {
+    width: 10rem;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.diseño  {
+    border: 2px solid rgb(154, 163, 22);
+    border-radius: 10%;
+    background-color: rgba(55, 194, 42, 0.6);
+    font-family:"letraNueva";
+    animation: temblor 1s 2;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    width: 8rem;
+    height: 80%;
+}
+
+.foto-planta {
+    background-image: url(plantasTransparente.png);
+    width: 40%;
+    height: 60%;
+    position: relative;
+    background-repeat:no-repeat;
+    background-size:  8rem 90%;
+    margin-top: 1%;
+}
+
+
+
+
+/* Sesion */
+
 .change-2 {
     position: absolute;
     display: none;
 }
 
-
-.change:checked + .lista {
+.change-2:checked + .sesion-form {
     display: block;
     
 }
 
 .sesion {
-    width: 90%;
-    height: 40%;
+    width: 100%;
+    height: 50%;
     margin-top: 2%;
-    margin-right: 8%;
+    /* margin-right: 0%; */
 }
 
-
+.contenedor-sesion-form {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    /* background-color: rgba(78, 76, 78, 0.9); */
+    opacity: 0.8;
+}
 
 #inicio-sesion {
-width: 80%;
-height: 90%;
-margin-left: 12%;
+margin-top: 2%;
+width: 15rem;
+height: 12.5rem;
+margin-left: 10%;
 box-shadow: 2px 2px 15px rgb(42, 78, 48);
 border-radius: 10px;
-/* background-color: red; */
+background-color: rgba(78, 76, 78, 0.3);
 }
+
 
 #inicio-sesion  p{
     text-align: center;
+    color: rgb(71, 71, 73);
+    font-weight: 500;
 }
 
 .icono-sesion {
-    margin-left: 96%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 95%;
+    height: 10%;
     
 }
 
-
-
 .button-x2 {
     margin-top: 4%;
-    margin-left: 14%;
+    margin-left: 6%;
+    display: flex;
+    flex-direction: row;
 }
 
 .button-sesion {
     width: 45%;
+    margin:1%;
+}
+
+.registrate {
+    margin: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .input-sesion {
@@ -227,60 +273,26 @@ border-radius: 10px;
     width: 100%;
     height: 100%;
     z-index: 100;
-}
-.change-2:checked + .sesion-form {
-    display: block;
-    
-}
-
-.icon {
-    margin-top: 2%;
-}
-    
-
-a {
-    text-decoration: none;
-    color: rgba(184, 211, 179, 0.856);
-    font-size: 20px;
+    animation: aparecer 1s;
 }
 
 
 
-h3 {
-    background-color: rgba(190, 181, 151, 0.959);
-    width: 100%;
-    text-align: center;
-    font-family:"letraNueva";
-    color: rgba(39, 122, 31, 0.979);
-}
-img {
-    height: 85vh;
-    width: 100vw;
-}
+/* Section-Plantas */
 
-
-
-.seccion {
-    height: 100vh;
-    width: 100vw;
-}
-
-
-
-header {
-    width: 100%;
-    position: fixed;
-    z-index: 11;
-    margin-top: 40vh;
-}
-
-.slider {
+.caracteristicas-plantas {
+    width: calc(100%-90rem);
+    height: 65%;
+    align-items: center;
     display: flex;
-    flex-direction: row;  
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(144, 216, 148,0.3);   
 }
-.changee {
-    display: block;
-    background-color: red;
+
+.caracteristicas-plantas-2 {
+    margin: 1.4rem;
+    
 }
 
 /* carrusel */
@@ -297,50 +309,41 @@ header {
 }
 
 #imagen {  
-    width: 78%;
-    height: 70%;
+    width: 16rem;
+    height: 350px;
     overflow: hidden;
     margin-top: 12%;
     box-shadow: 2px 1px;
 }
 
-/* @supports(object-fit: cover){
-    .contenedoor img{
-      height: 100%;
-      object-fit: cover;
-      object-position: center center;
-    }
-} */
 .contenedor-bottom {
-    width: 50%;
-    height: 16%;
+    width: 10rem;
+    height: 10%;
     margin-top: 1%;
     background-color: rgba(77, 100, 72, 0.959);
     box-shadow: 2px 2px 15px rgba(78, 97, 73, 0.959);
     /* box-shadow: 2px 2px 15px rgb(42, 78, 48); */
     border-radius: 10px;
     z-index: 8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
-
-
 
 .bottom {
     font-size: 30px;
-    position: relative;
-    width: 30px;
-    height: 30px;
+    width: 2rem;
     line-height: 30px;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.7);
     text-align: center;
     font-weight: bold;
-    position: absolute;
     color: #fff;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    margin-top:3%;
 }
 
 .bottom:hover {
@@ -350,25 +353,102 @@ header {
 
 .atras {
     left: 30%;
-    top: calc(50%-70px);
 }
 
 .adelante {
     right: 30%;
-    top: calc(50%-70px);
 }
 
+
+
+/* Section-Sanidad */
+
+.contenedor-sanidad {
+    width: 100%;
+    height: 94%;
+    background-color: rgba(190, 181, 151, 0.959);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-sanidad {
+    font-size: 16px;
+    background-color: rgb(144, 216, 148,0.3);
+    width: 18rem;
+    box-shadow: 2px 2px 15px rgb(42, 78, 48);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.sanidad-foto {
+    width:18rem;
+    height: 50%;
+}
+
+.diseño-2 {
+    border: 2px solid rgb(154, 163, 22);
+    border-radius: 10%;
+    background-color: rgba(55, 194, 42, 0.6);
+    font-family:"letraNueva";
+    animation: temblor 1s 2;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    width: 10rem;
+    height: 100%;
+    
+}
+
+.contenedor-diseño-2 {
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 2rem;
+}
+
+.diseño-2 a {
+    font-size: 16px;
+}
+
+
+
+/* Section-Contacto */
+
+.contenedor-contacto {
+    width:100%;
+    height: 94%;
+    background-color: rgba(190, 181, 151, 0.959);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+#contactanos {
+    margin-top: 8%;
+    width: 17rem;
+    height: 26rem;
+    box-shadow: 2px 2px 15px rgb(42, 78, 48);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    }
+        
+  
+    
 /* form */
 
 
 input {
     width: 80%;
-    height: 70%;
+    height: 1.4rem;
     margin-left: 4%;
     border: 1px solid rgb(154, 163, 22); 
     box-shadow: 2px 2px rgb(164, 173, 32);
 }
-
 
 input:focus {
     border: 1px solid rgb(154, 163, 22); 
@@ -395,80 +475,123 @@ textarea:focus {
 }
 
 form {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     align-items: space-around;
-    background-color: rgb(188, 194, 189);
     width: 90%;
-    height: 60%;
     background-color: rgb(144, 216, 148,0.3);
     margin-left: 0%;
 }
 
-#contactanos {
-margin-top: 8%;
-width: 90%;
-box-shadow: 2px 2px 15px rgb(42, 78, 48);
-border-radius: 10px;
-}
-.caracteristicas-plantas {
+/* .consulta {
     width: 100%;
-    height: 70%;
+    height: 65%;
+} */
+
+/* Redes Sociales */
+
+.redes-sociales {
+    /* margin-top: 10%; */
+    height: 32%;
+    background-color: rgb(233, 224, 224,0.3);
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    background-color: rgb(144, 216, 148,0.3);
-    
-    
+    justify-content: space-around;
 }
 
-.caracteristicas-plantas-2 {
-    margin: 5%;
-}
-
-.info-sanidad {
-    font-size: 16px;
-    background-color: rgb(144, 216, 148,0.3);
+.ajustar {
     width: 90%;
-    box-shadow: 2px 2px 15px rgb(42, 78, 48);
-    border-radius: 10px;
-    text-align: inherit;
-}
-
-.sanidad-foto {
-    height: 50%;
-}
-
-.diseño-2 {
-    margin-top: 4%;
-    border: 2px solid rgb(154, 163, 22);
-    border-radius: 10%;
-    background-color: rgba(55, 194, 42, 0.6);
-    font-family:"letraNueva";
-    animation: temblor 1s 2;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    width: 40%;
-    height: 8%;
-}
-
-.diseño-2 a {
-    font-size: 16px;
-}
-
-
-.contenedor-contacto {
-    width:100%;
-    height: 94%;
-    background-color: rgba(190, 181, 151, 0.959);
+    height: 15rem;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column ;
+    justify-content: space-around;
 }
 
-.contenedor-sanidad {
+.social {
+    font-size: 50px;
+}
+
+.linea {
+    /* margin-top: 15%; */
+}
+
+
+
+/* Footer */
+
+.footer {
+    margin-top: 10%;
     width: 100%;
-    height: 94%;
+    height: 2rem;
     background-color: rgba(190, 181, 151, 0.959);
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+.ultimo {
+    text-align: center;
+   
+}
+
+
+
+/* Animaciones  */
+
+
+@keyframes temblor {
+    from {
+        
+    }
+    to {
+        transform: scale(1.05)
+        
+    }
+}
+
+
+@keyframes aparecer {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+
+@keyframes desliz {
+    from {
+        margin-left: -30%;
+    }
+    to {
+        margin-left: 30%;
+    }
+}
+
+
+
+
+/* media queries */
+
+
+@media  (min-width: 320px) and (max-width: 476px){ 
+   
+      
+}
+
+@media  (min-width: 477px) and (max-width: 599px){ 
+
+
+}
+
+@media  (min-width: 600px) and (max-width: 767px){ 
+       
+
+}
+
+@media  (min-width: 769px) and (max-width: 1023px){ 
+    
+
 }
