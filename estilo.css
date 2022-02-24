@@ -79,7 +79,7 @@ ul li:hover {
 }
 
 .color {
-    color:rgb(63, 6, 75);
+    color: rgba(21, 13, 56, 0.979);
 }
 
 a {
@@ -102,11 +102,12 @@ a {
 }
 
 h3 {
-    background-color: rgba(190, 181, 151, 0.959);
+    background: rgb(30,97,74);
+    background: linear-gradient(197deg, rgba(30,97,74,1) 29%, rgba(144,200,170,0.9865951742627346) 69%);
     width: 100%;
     text-align: center;
     font-family:"letraNueva";
-    color: rgba(39, 122, 31, 0.979);
+    color: rgba(21, 13, 56, 0.979);
 }
 
 .ci {
@@ -120,7 +121,8 @@ h3 {
 
 
 .jardin {
-    background-color: rgba(190, 181, 151, 0.959);
+    background: rgb(30,97,74);
+    background: linear-gradient(197deg, rgba(30,97,74,1) 29%, rgba(144,200,170,0.9865951742627346) 69%);
     width: 100%;
     height: 94%;  
     display: flex; 
@@ -157,7 +159,7 @@ h3 {
     height: 65%; 
 } 
 .cuadro-1 {
-    color: rgba(39, 122, 31, 0.979);
+    color: rgba(21, 13, 56, 0.979);
     width: 12rem;
     height: 60%;
     font-size: 30px;

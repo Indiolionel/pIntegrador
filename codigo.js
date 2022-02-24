@@ -54,3 +54,4 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 document.write (screen.width);
 document.write ("/"+screen.height)
+
