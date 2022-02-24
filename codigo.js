@@ -51,3 +51,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
     let contenedor = document.querySelector('.contenedor')
     carrousel(contenedor);
 });
+
+document.write (screen.width);
+document.write ("/"+screen.height)
