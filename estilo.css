@@ -97,7 +97,7 @@ a {
 /* Section  */
 
 .seccion {
-    height: 100vh;
+    height: 48rem;
     width: 100vw;
 }
 
@@ -393,7 +393,7 @@ background-color: rgba(78, 76, 78, 0.3);
 
 .sanidad-foto {
     width:18rem;
-    height: 50%;
+    height: 20rem;
 }
 
 .diseño-2 {
@@ -493,10 +493,6 @@ form {
     margin-left: 0%;
 }
 
-/* .consulta {
-    width: 100%;
-    height: 65%;
-} */
 
 /* Redes Sociales */
 
@@ -588,10 +584,11 @@ form {
 }
 
 @media  (min-width: 477px) and (max-width: 599px){ 
-   .menu {
+  
+    /* header */
+    .menu {
     width: 95%;
     height: 1.2rem;
-    display: flex;
     flex-direction: row;
     align-items: start;
     justify-content: center;
@@ -615,7 +612,6 @@ form {
         justify-content: space-around;
         width: 40rem;
         height: 1.12rem;
-        /* background-color: rgba(78, 76, 78, 0.5); */
         animation: aparecer 3s;
     }
 
@@ -628,10 +624,7 @@ form {
     }
 
     header {
-        width: 100%;
-        position: fixed;
-        z-index: 11;
-        margin-top:0;
+     margin-top:0;
         top: 0;
     }
 
@@ -660,7 +653,176 @@ form {
 
 
 @media  (min-width: 600px) and (max-width: 767px){ 
+   
+   /* header */
+    .menu {
+        width: 95%;
+        height: 1.2rem;
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: center;
+       }
        
+        .lista {
+            display: block;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+        }
+    
+        ul {
+            /* margin-left: 6%; */
+            display: flex;
+            flex-direction: row;
+            align-items: end;
+            justify-content: space-around;
+            width: 40rem;
+            height: 1.12rem;
+            animation: aparecer 3s;
+        }
+    
+        ul li a{
+            font-size: 16px;
+        }
+    
+        .icono-flecha {
+            display: none;
+        }
+    
+        header {
+            width: 100%;
+            position: fixed;
+            z-index: 11;
+            margin-top:0;
+            top: 0;
+        }
+    
+        .sesion-2 {
+            display: block;
+            width: 8rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+    
+        .sesion-2 p {
+            font-size: 16px;
+            font-weight: 600;
+            color: rgb(63, 6, 75);
+            ;
+        }
+    
+        .fa-user {
+            display: none;
+        }
+
+        /* seccion-presentacion */
+
+                
+                
+        .cuadro {
+            justify-content: space-around;
+        }
+
+    
+        .cuadro-1 {
+            font-size: 40px;
+        }
+        
+        
+             
+        
+        /* Section-Plantas */
+
+
+.caracteristicas-plantas-2 {
+    font-size: 1.2rem;
+}
+
+/* carrusel */
+
+
+#imagen {  
+    width: 22rem;
+    height: 395px;
+    margin-top: 10%;
+}
+
+.contenedor-bottom {
+    width: 12.5rem;
+   }
+
+.bottom {
+    font-size: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+
+
+/* Section-Sanidad */
+
+
+.info-sanidad {
+    font-size: 20px;
+    width: 22rem;
+}
+
+.sanidad-foto {
+    width:22rem;
+}
+
+
+
+/* Section-Contacto */
+
+
+
+#contactanos {
+    width: 22rem;
+    }
+        
+  
+    
+/* form */
+
+
+
+
+
+textarea {
+    width: 80%;
+}
+
+
+#envio {
+    margin-top: 4%;
+}
+
+
+/* Redes Sociales */
+
+.redes-sociales {
+    height: 30%;
+}
+
+.ajustar {
+    width: 82%;
+}
+
 
 }
 
