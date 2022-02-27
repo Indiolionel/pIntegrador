@@ -422,6 +422,7 @@ opacity: 1;
     background: linear-gradient(197deg, rgba(30,97,74,1) 29%, rgba(144,200,170,0.9865951742627346) 69%);    display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .info-sanidad {
@@ -448,12 +449,12 @@ opacity: 1;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     width: 10rem;
-    height: 100%;
+    height: 1.5rem;
     
 }
 
 .contenedor-diseño-2 {
-    margin-top: 4%;
+    margin:2%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -501,34 +502,55 @@ input {
     width: 80%;
     height: 1.4rem;
     margin-left: 4%;
-    border: 2px solid rgb(154, 163, 22); 
-    box-shadow: 2px 2px rgb(63, 6, 75);
+    border:0;
+    border-bottom:1px solid black;
+    background-color:transparent;
+    outline: none;
+
 }
 
 input:focus {
-    border: 1px solid rgb(154, 163, 22); 
-    box-shadow: 2px 2px rgb(88, 94, 15);
-    outline: none;
+    border-bottom: 1px solid rgb(66, 63, 66); 
+
 }
 
 textarea {
-    border: 1px solid rgb(154, 163, 22); 
-    box-shadow: 2px 2px rgb(63, 6, 75);
+    border: 1px solid rgb(10, 10, 10); 
     margin-left: 4%;
     resize: none;
 }
 
 textarea:focus {
-    border: 1px solid rgb(154, 163, 22); 
-    box-shadow: 2px 2px rgb(88, 94, 15);
+    border: 1px solid rgb(66, 63, 66); 
     outline: none;
 }
+
+::placeholder { 
+    color: rgb(217, 217, 226);
+ }
 
 #envio {
     margin-top: 4%;
     width: 40%;
 }
 
+.enviar {
+    width: 100%;
+    text-align: left;
+    margin: 4%;
+}
+
+.enviar button {
+    border-radius: 5px;
+    width: 75px;
+    height: 25px;
+    border: 1px solid black;
+    background-color: rgb(141, 137, 137);
+}
+
+#userConsulta {
+    background-color: transparent;
+}
 form {
     /* display: flex; */
     flex-direction: column;
@@ -1258,7 +1280,6 @@ textarea {
     animation-direction: alternate;
     animation-iteration-count: infinite;
     width: 12rem;
-    height: 100%;
     
 }
 
