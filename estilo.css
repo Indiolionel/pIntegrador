@@ -2,8 +2,11 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-   margin: 0;
+
+
+.conteiner {
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 @font-face {
@@ -23,13 +26,13 @@ img {
 header {
     width: 100%;
     position: fixed;
-    z-index: 11;
+    z-index: 200;
     margin-top: 40vh;
 }
 
 .menu {
     width: 96%;
-    height: 6rem;
+    height: 0;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -50,14 +53,14 @@ header {
 }
 
 ul {
-    margin-left: 6%;
+    margin-left: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(78, 76, 78, 0.9);
+    background-color: rgba(107, 107, 107,0.9);
     animation: aparecer 1s;
 }
 
@@ -97,8 +100,8 @@ a {
 /* Section  */
 
 .seccion {
-    height: 48rem;
-    width: 100vw;
+    height: 50rem;
+    width: 100%;
 }
 
 h3 {
@@ -175,7 +178,7 @@ h3 {
 
 .diseño  {
     border: 2px solid rgb(154, 163, 22);
-    border-radius: 10%;
+    border-radius: 10px;
     background-color: rgba(55, 194, 42, 0.6);
     font-family:"letraNueva";
     animation: temblor 1s 2;
@@ -244,18 +247,13 @@ h3 {
     height: 100%;
     top: 0;
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: center;
-    /* background-color: rgba(78, 76, 78, 0.9); */
     opacity: 0.8;
     
 }
 
-.aaa {
-    width: 100%;
-    height: 100%;
-    background-image: url(aver.gif);
-}
+
 #inicio-sesion {
 margin-top: 2%;
 width: 15rem;
@@ -263,17 +261,38 @@ height: 12.5rem;
 margin-left: 10%;
 box-shadow: 2px 2px 15px rgb(42, 78, 48);
 border-radius: 10px;
-background-color: rgba(107, 107, 107);
-opacity: 0.6;
+background-color: rgba(107, 107, 107,0.5);
+opacity: 1;
+}
+
+.container-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3%;
 }
 
 .sesion-2 {
     display: none;
 }
+
+.sesion-form {
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    animation: aparecer 1s;
+    top: 0;
+}
+
 #inicio-sesion  p{
     text-align: center;
     color: rgb(234, 234, 241);
     font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .icono-sesion {
@@ -285,16 +304,14 @@ opacity: 0.6;
     
 }
 
-.button-x2 {
-    margin-top: 4%;
-    margin-left: 6%;
-    display: flex;
-    flex-direction: row;
-}
-
-.button-sesion {
-    width: 45%;
-    margin:1%;
+.button-cuenta {
+    width:60%;
+    height: 2rem;
+    border-radius: 40px;
+    border: none ;
+    color: #fff;
+    background-color: rgb(63, 6, 75);
+    /* margin:1%; */
 }
 
 .registrate {
@@ -309,14 +326,7 @@ opacity: 0.6;
     margin-top: 4%;
     margin-left: 8%;
 }
-.sesion-form {
-    display: none;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-    animation: aparecer 1s;
-    top: 0;
-}
+
 
 
 
@@ -346,8 +356,8 @@ opacity: 0.6;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(190, 181, 151, 0.959);
-
+    background: rgb(30,97,74);
+    background: linear-gradient(197deg, rgba(30,97,74,1) 29%, rgba(144,200,170,0.9865951742627346) 69%);
 }
 
 #imagen {  
@@ -362,7 +372,7 @@ opacity: 0.6;
     width: 10rem;
     height: 8%;
     margin-top: 1%;
-    background-color: rgba(77, 100, 72, 0.959);
+    background-color: rgba(58, 45, 59, 0.959);
     box-shadow: 2px 2px 15px rgba(78, 97, 73, 0.959);
     /* box-shadow: 2px 2px 15px rgb(42, 78, 48); */
     border-radius: 10px;
@@ -408,15 +418,16 @@ opacity: 0.6;
 .contenedor-sanidad {
     width: 100%;
     height: 94%;
-    background-color: rgba(190, 181, 151, 0.959);
-    display: flex;
+    background: rgb(30,97,74);
+    background: linear-gradient(197deg, rgba(30,97,74,1) 29%, rgba(144,200,170,0.9865951742627346) 69%);    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .info-sanidad {
+    padding: 5px;
     font-size: 16px;
-    background-color: rgb(144, 216, 148,0.3);
+    background-color: rgba(240, 220, 240, 0.8);
     width: 18rem;
     box-shadow: 2px 2px 15px rgb(42, 78, 48);
     border-radius: 10px;
@@ -430,7 +441,7 @@ opacity: 0.6;
 
 .diseño-2 {
     border: 2px solid rgb(154, 163, 22);
-    border-radius: 10%;
+    border-radius: 10px;
     background-color: rgba(55, 194, 42, 0.6);
     font-family:"letraNueva";
     animation: temblor 1s 2;
@@ -461,8 +472,8 @@ opacity: 0.6;
 .contenedor-contacto {
     width:100%;
     height: 94%;
-    background-color: rgba(190, 181, 151, 0.959);
-    display: flex;
+    background: rgb(30,97,74);
+    background: linear-gradient(197deg, rgba(30,97,74,1) 29%, rgba(144,200,170,0.9865951742627346) 69%);    display: flex;
     flex-direction: column;
     align-items: center;
     /* justify-content: space-around; */
@@ -474,6 +485,8 @@ opacity: 0.6;
     height: 26rem;
     box-shadow: 2px 2px 15px rgb(42, 78, 48);
     border-radius: 10px;
+    background-color: rgba(107, 107, 107,0.5);
+    opacity: 0.8;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -488,8 +501,8 @@ input {
     width: 80%;
     height: 1.4rem;
     margin-left: 4%;
-    border: 1px solid rgb(154, 163, 22); 
-    box-shadow: 2px 2px rgb(164, 173, 32);
+    border: 2px solid rgb(154, 163, 22); 
+    box-shadow: 2px 2px rgb(63, 6, 75);
 }
 
 input:focus {
@@ -500,7 +513,7 @@ input:focus {
 
 textarea {
     border: 1px solid rgb(154, 163, 22); 
-    box-shadow: 2px 2px rgb(164, 173, 32);
+    box-shadow: 2px 2px rgb(63, 6, 75);
     margin-left: 4%;
     resize: none;
 }
@@ -521,7 +534,7 @@ form {
     flex-direction: column;
     align-items: space-around;
     width: 90%;
-    background-color: rgb(144, 216, 148,0.3);
+    background-color: rgba(51, 77, 54, 0.7);
     margin-left: 0%;
 }
 
@@ -558,8 +571,8 @@ form {
     margin-top: 10%;
     width: 100%;
     height: 2rem;
-    background-color: rgba(190, 181, 151, 0.959);
-    display: flex;
+    background: rgb(30,97,74);
+    background: linear-gradient(197deg, rgba(30,97,74,1) 29%, rgba(144,200,170,0.9865951742627346) 69%);    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -620,7 +633,7 @@ form {
     /* header */
     .menu {
     width: 95%;
-    height: 1.2rem;
+    height: 2rem;
     flex-direction: row;
     align-items: start;
     justify-content: center;
@@ -644,11 +657,12 @@ form {
         /* margin-left: 6%; */
         display: flex;
         flex-direction: row;
-        align-items: end;
+        align-items: center;
         justify-content: space-around;
         width: 40rem;
-        height: 1.12rem;
+        height: 3rem;
         animation: aparecer 3s;
+        background-color: rgba(114, 119, 117, 0.9);
     }
 
     ul li a{
@@ -666,7 +680,7 @@ form {
 
     .sesion-2 {
         display: block;
-        width: 7rem;
+        width: 8rem;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -674,7 +688,7 @@ form {
     }
 
     .sesion-2 p {
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 600;
         color: rgb(63, 6, 75);
         
@@ -682,8 +696,8 @@ form {
 
     
     #inicio-sesion {
-        width: 17rem;
-        height: 12.5rem;
+        width: 18rem;
+        height: 13.5rem;
         }
 
     .fa-user {
@@ -720,14 +734,13 @@ form {
 @media  (min-width: 600px) and (max-width: 767px){ 
    
    /* header */
-    .menu {
-        width: 95%;
-        height: 1.2rem;
-        display: flex;
-        flex-direction: row;
-        align-items: start;
-        justify-content: center;
-       }
+   .menu {
+    width: 95%;
+    height: 2rem;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+   }
 
        
        
@@ -745,10 +758,10 @@ form {
             /* margin-left: 6%; */
             display: flex;
             flex-direction: row;
-            align-items: end;
+            align-items: center;
             justify-content: space-around;
             width: 40rem;
-            height: 1.12rem;
+            height: 3rem;
             animation: aparecer 3s;
         }
     
@@ -778,8 +791,8 @@ form {
         }
 
         #inicio-sesion {
-            width: 17rem;
-            height: 15rem;
+            width: 18rem;
+            height: 14rem;
             
             }
     
@@ -914,6 +927,14 @@ textarea {
 @media  (min-width: 768px) and (max-width: 1023px){ 
     
 
+        .imageen {
+            width: 100%;
+            height: 40%;
+            margin-top: -16%;
+            background-repeat: none;
+            background-image: url(aver.gif);
+        }
+
     .foto-planta2 {
         display: none;
     }
@@ -943,14 +964,12 @@ textarea {
 /* header */
 .menu {
     width: 95%;
-    height: 1.2rem;
+    height: 2rem;
     display: flex;
     flex-direction: row;
     align-items: start;
     justify-content: center;
    }
-
-   
    
     .lista {
         display: block;
@@ -966,10 +985,10 @@ textarea {
         /* margin-left: 6%; */
         display: flex;
         flex-direction: row;
-        align-items: end;
+        align-items: center;
         justify-content: space-around;
         width: 60rem;
-        height: 1.12rem;
+        height: 3em;
         animation: aparecer 3s;
     }
 
@@ -1002,13 +1021,13 @@ textarea {
         font-size: 16px;
         font-weight: 600;
         color: rgb(63, 6, 75);
-        ;
+        
     }
 
     
     #inicio-sesion {
-        width: 20rem;
-        height: 16rem;
+        width: 22rem;
+        height: 14rem;
         }
 
     .fa-user {
@@ -1019,9 +1038,89 @@ textarea {
         width: 19%;
     }
 
+
+/* Section-Plantas */
+
+.caracteristicas-plantas-2 {
+    font-size: 22px;
 }
 
+#imagen {  
+    width: 28rem;
+    height: 450px;
+    margin-top: 10%;
+}
+
+.contenedor-bottom {
+    width: 12rem;
+   }
+
+
+   /* Section-Sanidad */
+
+
+.info-sanidad {
+    font-size: 22px;
+    width: 24rem;
+}
+
+.sanidad-foto {
+    width:24rem;
+}
+
+/* * Section-Contacto */
+
+
+
+#contactanos {
+    width: 25rem;
+    }
+        
+  
+    
+/* form */
+
+
+
+
+
+textarea {
+    width: 80%;
+}
+
+
+#envio {
+    margin-top: 4%;
+}
+
+
+/* Redes Sociales */
+
+.redes-sociales {
+    height: 25%;
+}
+
+.ajustar {
+    width: 75%;
+}
+
+
+
+
+}
+
+
+
+
 @media  (min-width: 1024px) { 
+
+    .imageen {
+        width: 100%;
+        height: 40%;
+        margin-top: -16%;
+        background-repeat: none;
+        background-image: url(aver.gif);
+    }
 
     .foto-planta2 {
         display: none;
@@ -1048,7 +1147,7 @@ textarea {
     /* header */
 .menu {
     width: 95%;
-    height: 1.2rem;
+    height: 2rem;
     display: flex;
     flex-direction: row;
     align-items: start;
@@ -1071,15 +1170,15 @@ textarea {
         /* margin-left: 6%; */
         display: flex;
         flex-direction: row;
-        align-items: end;
+        align-items: center;
         justify-content: space-around;
-        width: 100%;
-        height: 1.12rem;
+        width: 65rem;
+        height: 3rem;
         animation: aparecer 3s;
     }
 
     ul li a{
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .icono-flecha {
@@ -1104,7 +1203,7 @@ textarea {
     }
 
     .sesion-2 p {
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 600;
         color: rgb(63, 6, 75);
         ;
@@ -1116,15 +1215,90 @@ textarea {
     }
     
     #inicio-sesion {
-        width: 30rem;
-        height: 16rem;
+        width: 26rem;
+        height: 14rem;
         }
         .icono-sesion {
             width: 15%;
-            background-color: red;
             justify-content: end;
         }
        
+        /* Section-Plantas */
+
+.caracteristicas-plantas-2 {
+    font-size: 24px;
+}
+
+#imagen {  
+    width: 30rem;
+    height: 500px;
+    margin-top: 10%;
+}
+
+.contenedor-bottom {
+    width: 14rem;
+   }
+
+   /* sanidad */
+   .info-sanidad {
+    font-size: 24px;
+    width: 26rem;
+}
+
+.sanidad-foto {
+    width:26rem;
+}
+
+.diseño-2 {
+    border: 2px solid rgb(154, 163, 22);
+    border-radius: 40px;
+    background-color: rgba(55, 194, 42, 0.6);
+    font-family:"letraNueva";
+    animation: temblor 1s 2;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    width: 12rem;
+    height: 100%;
+    
+}
+
+
+/* * Section-Contacto */
+
+
+
+#contactanos {
+    width: 25rem;
+    }
+        
+  
+    
+/* form */
+
+
+
+
+
+textarea {
+    width: 80%;
+}
+
+
+#envio {
+    margin-top: 4%;
+}
+
+
+/* Redes Sociales */
+
+.redes-sociales {
+    height: 25%;
+}
+
+.ajustar {
+    width: 60%;
+}
+
 
 }
     
